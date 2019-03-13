@@ -1,22 +1,22 @@
 import React, { Component } from 'react';
 import { Text } from 'react-native';
 
-import { Card, CardSection } from './common';
+import { Card, CardSection, Button, InputField } from './common';
 
 class LoginForm extends Component {
   render() {
     return(
       <Card>
         <CardSection>
-          <Text>Login form</Text>
+          <InputField label="Email" />
         </CardSection>
 
         <CardSection>
-          <Text>A</Text>
+          <InputField label="Password" />
         </CardSection>
 
         <CardSection>
-          <Text>B</Text>
+          <Button>Log in</Button>
         </CardSection>
       </Card>
     );
