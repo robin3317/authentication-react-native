@@ -7,14 +7,25 @@ class LoginForm extends Component {
   render() {
     return(
       <Card>
+        {/* Email */}
         <CardSection>
-          <InputField label="Email" />
+          <InputField 
+            label="Email" 
+            placeholder="example@gmail.com"
+            keyboardType="email-address"
+          />
         </CardSection>
 
+        {/* Password */}
         <CardSection>
-          <InputField label="Password" />
+          <InputField 
+            label="Password" 
+            placeholder="password"
+            secureTextEntry={true} 
+          />
         </CardSection>
 
+        {/* Button */}
         <CardSection>
           <Button>Log in</Button>
         </CardSection>
